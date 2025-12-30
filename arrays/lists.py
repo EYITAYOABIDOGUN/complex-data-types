@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = = ['Tired', 'Happy']
 
 ########################################################################
 
@@ -31,7 +31,9 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list(list1)
+listCopy.append(appendElement)
+
 
 ########################################################################
 
@@ -54,6 +56,7 @@ cycleMe = list(range(1, random.randint(5, 15)))
 cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
+cycleMe = cycleMe[2:] + cycleMe[:2]
 
 
 
@@ -74,7 +77,8 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearJustMe = list(clearJustMe)
+clearJustMe.clear()
 
 ########################################################################
 
@@ -92,7 +96,7 @@ loseMe = clearAll
 #  so that it too reference the same emptied list. Do nothing to 'loseMe'.
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
+cleaALL.clear()
 
 
 ########################################################################
@@ -111,7 +115,10 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+allScores.sort()
+allScores.reverse()
+top3Scores = allScores[:3]
+
 
 ########################################################################
 
